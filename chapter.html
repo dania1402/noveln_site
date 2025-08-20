@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="ch-title">Chapter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="brand"><a href="index.html">NovelSite</a></div>
+      <div class="spacer"></div>
+      <a class="btn" href="pages/donate.html">Donate</a>
+    </div>
+  </nav>
+  <main class="container">
+    <div id="breadcrumbs" class="small"></div>
+    <div class="chapter-nav">
+      <button id="prev" class="secondary">← Previous</button>
+      <button id="next" class="primary">Next →</button>
+    </div>
+    <article id="chapter"></article>
+    <div class="chapter-nav">
+      <button id="prev-bottom" class="secondary">← Previous</button>
+      <button id="next-bottom" class="primary">Next →</button>
+    </div>
+  </main>
+  <footer class="footer center">© <span id="year"></span> NovelSite</footer>
+  <script src="js/site.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('prev-bottom').onclick = () => document.getElementById('prev').click();
+      document.getElementById('next-bottom').onclick = () => document.getElementById('next').click();
+    });
+  </script>
+</body>
+</html>

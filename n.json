@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Mecha Warrior",
+    "status": "Ongoing",
+    "tags": ["Action", "Sci-Fi", "Adventure"],
+    "cover": "img/cover1.jpg",
+    "description": "In a futuristic world, a young pilot discovers a hidden power within his giant mecha.",
+    "chapters": [
+      {"number": 1, "title": "Awakening", "file": "chapter1.html"},
+      {"number": 2, "title": "First Battle", "file": "chapter2.html"}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Crimson Destiny",
+    "status": "Completed",
+    "tags": ["Romance", "Fantasy", "Drama"],
+    "cover": "img/cover2.jpg",
+    "description": "A girl chosen by fate must decide between love and destiny in a magical empire.",
+    "chapters": [
+      {"number": 1, "title": "The Prophecy", "file": "chapter1.html"},
+      {"number": 2, "title": "The Final Choice", "file": "chapter2.html"}
+    ]
+  }
+]
